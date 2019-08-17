@@ -1,10 +1,10 @@
 import React from 'react';
-import myLogo from '../../assets/arc_logo.png';
+import logo from '../../assets/logo.png';
 
 export default function Logo() {
   return (
     <>
-      <img src={myLogo} alt='my personal logo' />
+      <img src={logo} alt='my personal logo' />
     </>
   );
 }
