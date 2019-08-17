@@ -1,12 +1,10 @@
 import React from 'react';
-import NameText from '../NameText/NameText';
-import Logo from '../Logo/Logo';
+import Sidebar from '../containers/sidebar/Sidebar';
 
 export default function App() {
   return (
     <div>
-      <Logo />
-      <NameText />
+      <Sidebar />
     </div>
   );
 }
