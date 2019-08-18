@@ -5,7 +5,7 @@
 }
 
 .outsideLogo:hover {
-  transition: .3s;
+  transition: .2s;
   transform: scale(1.5);
   background: whitesmoke;
 }

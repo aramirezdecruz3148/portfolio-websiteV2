@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Sidebar from '../containers/sidebar/Sidebar';
 
-export default function App() {
-  return (
-    <div>
-      <Sidebar />
-    </div>
-  );
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        <Sidebar />
+      </div>
+    );
+  }
 }
