@@ -1,6 +1,6 @@
 import React from 'react';
 import myLogo from '../../assets/myLogo.png';
-import styles from '../sidebar-components/logo.css';
+import styles from './Logo.css';
 
 export default function Logo() {
   return (

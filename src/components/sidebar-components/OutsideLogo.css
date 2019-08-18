@@ -1,0 +1,11 @@
+.outsideLogo {
+  width: 3vw;
+  height: 3vw;
+  margin-right: 6vw;
+}
+
+.outsideLogo:hover {
+  transition: .3s;
+  transform: scale(1.5);
+  background: whitesmoke;
+}
