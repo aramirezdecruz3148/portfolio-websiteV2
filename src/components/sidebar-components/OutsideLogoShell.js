@@ -18,7 +18,7 @@ const OutsideLogo = posed.img({
   },
   press: {
     scale: 1.4,
-    background: '#FFCF9E'
+    background: '#000000'
   }
 });
 
