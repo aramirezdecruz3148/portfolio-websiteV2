@@ -1,6 +1,6 @@
 .shell {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   margin-left: 1.4vw;
   margin-top: 3vw;
 }
@@ -8,5 +8,5 @@
 .outsideLogo {
   width: 3vw;
   height: 3vw;
-  margin-right: 6vw;
+  margin-right: 6.4vw;
 }
