@@ -2,8 +2,10 @@
 
 .title {
   font-family: 'Roboto Condensed', sans-serif;
+  font-size: 2vw;
 }
 
 .textBody {
   font-family: 'Assistant', sans-serif;
+  font-size: 1.3vw;
 }
