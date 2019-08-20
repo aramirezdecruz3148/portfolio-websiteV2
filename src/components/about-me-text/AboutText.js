@@ -1,10 +1,11 @@
 import React from 'react';
+import styles from './AboutText.css';
 
 export default function AboutText() {
   return (
     <>
-      <h2>Hello There!</h2>
-      <p>I am Full-Stack Software Developer and Professional Creative 
+      <h2 className={styles.title}>HELLO THERE!</h2>
+      <p className={styles.textBody}>I am Full-Stack Software Developer and Professional Creative 
         with a background as an artist and arts administrator. My time 
         in the arts has primed my tech career with empathy, drive and a 
         love for dynamic collaboration.

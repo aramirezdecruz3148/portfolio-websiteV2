@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Assistant|Roboto+Condensed&display=swap');
+
+.title {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.textBody {
+  font-family: 'Assistant', sans-serif;
+}
