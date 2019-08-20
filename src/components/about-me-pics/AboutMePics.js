@@ -1,18 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './AboutMePics.css';
 
-function AboutMePics({ imageSrc, caption }) {
+function AboutMePics({ imageSrc }) {
   return (
     <div>
-      <img src={imageSrc} />
-      <h4>{caption}</h4>
+      <img className={styles.img} src={imageSrc} />
     </div>
   );
 }
 
 AboutMePics.propTypes = {
   imageSrc: PropTypes.string.isRequired,
-  caption: PropTypes.string.isRequired
 };
 
 export default AboutMePics;
