@@ -1,0 +1,55 @@
+.onLoad {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #afeeee;
+  height: 100vw;
+  opacity: 0;
+  animation-name: onLoadBackground;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  z-index: 1;
+}
+
+@keyframes onLoadBackground {
+  from {opacity: 1}
+  to {opacity: 0}
+}
+@-o-keyframes onLoadBackground {
+  from {opacity: 1}
+  to {opacity: 0}
+}
+@-moz-keyframes onLoadBackground {
+  from {opacity: 1}
+  to {opacity: 0}
+}
+@-webkit-keyframes onLoadBackground {
+  from {opacity: 1}
+  to {opacity: 0}
+}
+
+.img {
+  width: 70vw;
+  animation-name: onLoadImg;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+/* 
+@keyframes onLoadImg {
+  from {opacity: 1}
+  to {opacity: 0}
+}
+@-o-keyframes onLoadImg {
+  from {opacity: 1}
+  to {opacity: 0}
+}
+@-moz-keyframes onLoadImg {
+  from {opacity: 1}
+  to {opacity: 0}
+}
+@-webkit-keyframes onLoadImg {
+  from {opacity: 1}
+  to {opacity: 0}
+} */

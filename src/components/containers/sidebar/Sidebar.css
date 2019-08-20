@@ -7,4 +7,5 @@
   height: 100vh;
   box-shadow: 5px 5px 2px 1px rgb(231, 231, 231);
   position: fixed;
+  z-index: auto;
 }
