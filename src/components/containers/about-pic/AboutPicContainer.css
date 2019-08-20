@@ -1,0 +1,9 @@
+.twoPhotos {
+  display: flex;
+  justify-content: center;
+}
+
+.singlePhoto {
+  display: flex;
+  justify-content: center;
+}
