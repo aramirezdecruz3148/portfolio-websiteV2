@@ -1,7 +1,7 @@
 import React from 'react';
 import AboutMePics from '../../about-me-pics/AboutMePics';
 import styles from './AboutPicContainer.css';
-import placeholder from '../../../assets/Alex.jpg';
+import placeholder from '../../../assets/cat.jpg';
 
 export default function AboutPicContainer() {
   return (
