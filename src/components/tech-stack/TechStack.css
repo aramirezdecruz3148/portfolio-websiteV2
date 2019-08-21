@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Assistant|Roboto+Condensed&display=swap');
+
 .techStack {
   display: flex;
   justify-content: space-around;
@@ -7,11 +9,24 @@
 
 .card {
   width: 9vw;
-  height: 29vh;
+  height: 15vw;
+  font-family: 'Assistant', sans-serif;
+}
+
+.cardContent {
+  margin-top: -1vw;
+  text-align: left;
+  font-size: 1.3vw;
 }
 
 .list {
   list-style: none;
-  margin-left: -2.7vw;
-  margin-top: -1vw;
+  /* margin-left: -3.3vw; */
+  margin-top: -.8vw;
+}
+
+.title {
+  font-weight: bolder;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-top: -.1vw;
 }

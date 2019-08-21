@@ -6,8 +6,8 @@ export default function TechStack() {
   return (
     <div className={styles.techStack}>
       <Card className={styles.card} raised={true} square={true}>
-        <CardContent>
-          <h4>Languages</h4>
+        <CardContent className={styles.cardContent}>
+          <h4 className={styles.title}>LANGUAGES</h4>
           <ul className={styles.list}>
             <li>JavaScript</li>
             <li>HTML</li>
@@ -16,8 +16,8 @@ export default function TechStack() {
         </CardContent>
       </Card>
       <Card className={styles.card} raised={true} square={true}>
-        <CardContent>
-          <h4>Front-End</h4>
+        <CardContent className={styles.cardContent}>
+          <h4 className={styles.title}>FRONT-END</h4>
           <ul className={styles.list}>
             <li>React</li>
             <li>Redux</li>
@@ -25,8 +25,8 @@ export default function TechStack() {
         </CardContent>
       </Card>
       <Card className={styles.card} raised={true} square={true}>
-        <CardContent>
-          <h4>Back-End</h4>
+        <CardContent className={styles.cardContent}>
+          <h4 className={styles.title}>BACK-END</h4>
           <ul className={styles.list}>
             <li>Node.js</li>
             <li>Express</li>
@@ -34,8 +34,8 @@ export default function TechStack() {
         </CardContent>
       </Card>
       <Card className={styles.card} raised={true} square={true}>
-        <CardContent>
-          <h4>Databases</h4>
+        <CardContent className={styles.cardContent}>
+          <h4 className={styles.title}>DATABASES</h4>
           <ul className={styles.list}>
             <li>Firebase</li>
             <li>MongoDB</li>
@@ -44,8 +44,8 @@ export default function TechStack() {
         </CardContent>
       </Card>
       <Card className={styles.card} raised={true} square={true}>
-        <CardContent>
-          <h4>Tools</h4>
+        <CardContent className={styles.cardContent}>
+          <h4 className={styles.title}>TOOLS</h4>
           <ul className={styles.list}>
             <li>Github</li>
             <li>Slack</li>
@@ -56,8 +56,8 @@ export default function TechStack() {
         </CardContent>
       </Card>
       <Card className={styles.card} raised={true} square={true}>
-        <CardContent>
-          <h4>Testing</h4>
+        <CardContent className={styles.cardContent}>
+          <h4 className={styles.title}>TESTING</h4>
           <ul className={styles.list}>
             <li>Jest</li>
             <li>QUnit</li>
