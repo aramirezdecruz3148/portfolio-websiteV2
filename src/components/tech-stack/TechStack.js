@@ -7,61 +7,61 @@ export default function TechStack() {
     <div className={styles.techStack}>
       <Card className={styles.card} raised={true} square={true}>
         <CardContent className={styles.cardContent}>
-          <h4 className={styles.title}>LANGUAGES</h4>
-          <ul className={styles.list}>
-            <li>JavaScript</li>
-            <li>HTML</li>
-            <li>CSS</li>
-          </ul>
+          <section>
+            <h4>LANGUAGES</h4>
+            <p>JavaScript</p>
+            <p>HTML</p>
+            <p>CSS</p>
+          </section>
         </CardContent>
       </Card>
       <Card className={styles.card} raised={true} square={true}>
         <CardContent className={styles.cardContent}>
-          <h4 className={styles.title}>FRONT-END</h4>
-          <ul className={styles.list}>
-            <li>React</li>
-            <li>Redux</li>
-          </ul>
+          <section>
+            <h4>FRONT-END</h4>
+            <p>React</p>
+            <p>Redux</p>
+          </section>
         </CardContent>
       </Card>
       <Card className={styles.card} raised={true} square={true}>
         <CardContent className={styles.cardContent}>
-          <h4 className={styles.title}>BACK-END</h4>
-          <ul className={styles.list}>
-            <li>Node.js</li>
-            <li>Express</li>
-          </ul>
+          <section>
+            <h4>BACK-END</h4>
+            <p>Node.js</p>
+            <p>Express</p>
+          </section>
         </CardContent>
       </Card>
       <Card className={styles.card} raised={true} square={true}>
         <CardContent className={styles.cardContent}>
-          <h4 className={styles.title}>DATABASES</h4>
-          <ul className={styles.list}>
-            <li>Firebase</li>
-            <li>MongoDB</li>
-            <li>Mongoose</li>
-          </ul>
+          <section className={styles.section}>
+            <h4>DATABASES</h4>
+            <p>Firebase</p>
+            <p>MongoDB</p>
+            <p>Mongoose</p>
+          </section>
         </CardContent>
       </Card>
       <Card className={styles.card} raised={true} square={true}>
         <CardContent className={styles.cardContent}>
-          <h4 className={styles.title}>TOOLS</h4>
-          <ul className={styles.list}>
-            <li>Github</li>
-            <li>Slack</li>
-            <li>VScode</li>
-            <li>Heroku</li>
-            <li>Netlify</li>
-          </ul>
+          <section className={styles.section}>
+            <h4>TOOLS</h4>
+            <p>Github</p>
+            <p>Slack</p>
+            <p>VScode</p>
+            <p>Heroku</p>
+            <p>Netlify</p>
+          </section>
         </CardContent>
       </Card>
       <Card className={styles.card} raised={true} square={true}>
         <CardContent className={styles.cardContent}>
-          <h4 className={styles.title}>TESTING</h4>
-          <ul className={styles.list}>
-            <li>Jest</li>
-            <li>QUnit</li>
-          </ul>
+          <section className={styles.section}>
+            <h4>TESTING</h4>
+            <p>Jest</p>
+            <p>QUnit</p>
+          </section>
         </CardContent>
       </Card>
     </div>
