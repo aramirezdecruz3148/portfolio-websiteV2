@@ -6,5 +6,12 @@
 }
 
 .card {
-  width: 10vw;
+  width: 9vw;
+  height: 29vh;
+}
+
+.list {
+  list-style: none;
+  margin-left: -2.7vw;
+  margin-top: -1vw;
 }
