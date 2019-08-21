@@ -1,0 +1,10 @@
+.techStack {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: purple;
+}
+
+.card {
+  width: 10vw;
+}

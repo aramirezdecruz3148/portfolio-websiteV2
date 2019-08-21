@@ -6,7 +6,7 @@
   align-items: center;
   margin-top: 2vw;
   margin-bottom: 2vw;
-  margin-left: 5vw;
+  margin-left: .8vw;
 }
 
 .singlePhoto {
@@ -14,6 +14,7 @@
   justify-content: space-around;
   align-items: center;
   margin-top: 2vw;
+  margin-left: 1vw;
 }
 
 .caption {
