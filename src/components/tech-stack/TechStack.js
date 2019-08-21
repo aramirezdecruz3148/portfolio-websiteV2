@@ -5,7 +5,6 @@ import { Card, CardContent } from '@material-ui/core';
 export default function TechStack() {
   return (
     <div className={styles.techStack}>
-      <h2>Tech Stack</h2>
       <Card className={styles.card} raised={true} square={true}>
         <CardContent>
           <h4>Languages</h4>
