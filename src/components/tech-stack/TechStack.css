@@ -2,17 +2,5 @@
 
 .techStack {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.title {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 1.7vw;
-  font-weight: bolder;
-}
-
-.body {
-  font-family: 'Assistant', sans-serif;
-  font-size: 1.3vw;
+  justify-content: space-evenly;
 }
