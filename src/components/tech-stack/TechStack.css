@@ -6,30 +6,13 @@
   align-items: center;
 }
 
-.techStack section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.techStack h4 {
-  font-weight: bolder;
+.title {
   font-family: 'Roboto Condensed', sans-serif;
-  text-align: center;
+  font-size: 1.7vw;
+  font-weight: bolder;
 }
 
-.techStack p {
-  margin-top: -1vw;
-}
-
-.card {
-  width: 9vw;
-  height: 15vw;
+.body {
   font-family: 'Assistant', sans-serif;
-}
-
-.cardContent {
-  margin-top: -1vw;
   font-size: 1.3vw;
 }
-
