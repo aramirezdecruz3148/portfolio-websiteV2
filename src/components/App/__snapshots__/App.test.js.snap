@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component renders App 1`] = `
+<Fragment>
+  <OnLoad
+    imageSrc="/path/image"
+  />
+  <div
+    className="app"
+  >
+    <Sidebar />
+    <MainContent />
+  </div>
+</Fragment>
+`;

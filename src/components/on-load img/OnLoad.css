@@ -1,0 +1,26 @@
+.onLoad {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #afeeee;
+  height: 100vw;
+  opacity: 0;
+  animation-name: onLoadBackground;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  z-index: 1;
+}
+
+@keyframes onLoadBackground {
+  from {opacity: 1}
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.img {
+  width: 50vw;
+}

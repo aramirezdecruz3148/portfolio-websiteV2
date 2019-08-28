@@ -1,0 +1,15 @@
+.app {
+  display: flex;
+  flex-direction: row;
+  background: white;
+  opacity: 1;
+  animation-name: onLoadAllContent;
+  animation-duration: 4s;
+  animation-timing-function: cubic-bezier(.0, -0.51, 1, .15);
+  animation-iteration-count: 1;
+}
+
+@keyframes onLoadAllContent {
+  from {opacity: 0}
+  to {opacity: 1}
+}

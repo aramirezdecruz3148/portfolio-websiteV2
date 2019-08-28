@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Assistant|Roboto+Condensed&display=swap');
+
+.techStack {
+  display: flex;
+  justify-content: space-evenly;
+}
