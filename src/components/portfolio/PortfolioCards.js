@@ -8,6 +8,7 @@ import CardActions from '@material-ui/core/CardActions';
 import Collapse from '@material-ui/core/Collapse';
 import IconButton from '@material-ui/core/IconButton';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import styles from './PortfolioCards.css';
 import bwHP from '../../assets/bw-HP.png';
 import HP from '../../assets/HP.png';
 
@@ -49,8 +50,9 @@ export default function PortfolioCards() {
       onMouseEnter={() => onHovered(true)}
       onClick={() => onHovered(true)}
     >
-      <CardContent>
-        <h4>Harry Potter Directory | Front-End App</h4>
+      <CardContent className={styles.card}>
+        <h4>HARRY POTTER DIRECTORY</h4>
+        <h5>FRONT-END APP</h5>
       </CardContent>
       <CardMedia
         className={classes.media}
@@ -58,7 +60,7 @@ export default function PortfolioCards() {
         title="screen shot of my HP site"
       />
       <CardContent>
-        <p>
+        <p className={styles.caption}>
           <em>A directory containing all characters and spells within the Harry
           Potter universe. Click below to view the deployed app or click the expand icon for
           project details and tech.</em>
