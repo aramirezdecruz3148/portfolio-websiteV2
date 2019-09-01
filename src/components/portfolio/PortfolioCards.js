@@ -68,7 +68,7 @@ export default function PortfolioCards() {
       </CardContent>
       <CardActions>
         <a href='https://harry-potter-directory.netlify.com'>
-          <button>View App</button>
+          <button className={styles.anchorButtons}>View<br />App</button>
         </a>
         <IconButton
           className={clsx(classes.expand, {
