@@ -41,24 +41,32 @@ export default function PortfolioCards() {
   }
 
   return (
-    <Card className={classes.card} raised={true} onMouseLeave={() => onHovered(false)} onMouseEnter={() => onHovered(true)}>
+    <Card
+      className={classes.card}
+      raised={true}
+      onMouseLeave={() => onHovered(false)}
+      onMouseEnter={() => onHovered(true)}
+      onClick={() => onHovered(true)}
+    >
       <CardContent>
         <h4>Harry Potter Directory | Front-End App</h4>
       </CardContent>
       <CardMedia
         className={classes.media}
-        image={hover ? HP : bwHP }
-        title="image description"
+        image={hover ? HP : bwHP}
+        title="screen shot of my HP site"
       />
       <CardContent>
         <p>
-          One sentence description referencing the links below and expanded view
-          for deets.
+          A directory containing all characters and spells within the Harry
+          Potter universe. Click below to view the deployed app or click the expand icon for
+          project details and tech.
         </p>
       </CardContent>
       <CardActions>
-        <button>This will be a link</button>
-        <button>This will be a link</button>
+        <a href='https://harry-potter-directory.netlify.com'>
+          <button>Deployed App</button>
+        </a>
         <IconButton
           className={clsx(classes.expand, {
             [classes.expandOpen]: expanded
@@ -83,5 +91,3 @@ export default function PortfolioCards() {
     </Card>
   );
 }
-
-
