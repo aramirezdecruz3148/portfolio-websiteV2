@@ -9,6 +9,7 @@ import Collapse from '@material-ui/core/Collapse';
 import IconButton from '@material-ui/core/IconButton';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import bwHP from '../../assets/bw-HP.png';
+import HP from '../../assets/HP.png';
 
 const useStyles = makeStyles(theme => ({
   card: {
@@ -33,19 +34,20 @@ const useStyles = makeStyles(theme => ({
 export default function PortfolioCards() {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
+  const [hover, onHovered] = React.useState(false);
 
   function handleExpandClick() {
     setExpanded(!expanded);
   }
 
   return (
-    <Card className={classes.card} raised={true}>
+    <Card className={classes.card} raised={true} onMouseLeave={() => onHovered(false)} onMouseEnter={() => onHovered(true)}>
       <CardContent>
         <h4>Harry Potter Directory | Front-End App</h4>
       </CardContent>
       <CardMedia
         className={classes.media}
-        image={bwHP}
+        image={hover ? HP : bwHP }
         title="image description"
       />
       <CardContent>
@@ -81,3 +83,5 @@ export default function PortfolioCards() {
     </Card>
   );
 }
+
+
