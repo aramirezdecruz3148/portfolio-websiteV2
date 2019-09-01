@@ -3,7 +3,7 @@ import styles from './MainContent.css';
 import AboutTextContainer from '../about-text/AboutTextContainter';
 import AboutPicContainer from '../about-pic/AboutPicContainer';
 import TechStackContainer from '../tech-stack/TechStackContainer';
-import PortfolioCards from '../../portfolio/PortfolioCards';
+import Wrapper from '../../portfolio/Wrapper';
 
 export default class MainContent extends Component {
   render() {
@@ -12,7 +12,7 @@ export default class MainContent extends Component {
         <AboutTextContainer />
         <AboutPicContainer />
         <TechStackContainer />
-        <PortfolioCards />
+        <Wrapper />
       </div>
     );
   }
