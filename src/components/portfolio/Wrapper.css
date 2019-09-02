@@ -1,0 +1,21 @@
+.top {
+  margin-top: 6vw;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+}
+
+.title {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 2vw;
+  margin-bottom: 2vw;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}

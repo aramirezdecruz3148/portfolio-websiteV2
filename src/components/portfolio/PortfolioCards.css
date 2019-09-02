@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Assistant|Roboto+Condensed&display=swap');
+
+.spaceAround {
+  margin-left: .7vw;
+  margin-top: .5vw;
+}
+
+.card h4 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.4vw;
+  text-align: left;
+}
+
+.card h5{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: normal;
+  font-size: .9vw;
+  margin-top: -.2vw;
+  text-align: left;
+}
+
+.anchorButtons {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1vw;
+  font-weight: bolder;
+  color: rgb(29, 29, 29);
+  background: white;
+  border: solid rgb(31, 31, 31) .1vw;
+  width: 3vw;
+  height: 3vw;
+  text-align: center;
+  padding: .1vw;
+}
+
+.anchorButtons:hover {
+  color: white;
+  background: black;
+  transform: scale(1.2);
+  text-align: center;
+}
+
+.caption {
+  font-family: 'Assistant', sans-serif;
+  font-size: .9vw;
+  margin-top: -.4vw;
+  text-align: left;
+  line-height: none;
+  font-style: italic;
+}
+
+.multipleLink {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 3vw;
+  margin-left: .5vw;
+}
+
+.logo:hover {
+  background: rgb(199, 199, 199);
+  transform: scale(1.2);
+}
