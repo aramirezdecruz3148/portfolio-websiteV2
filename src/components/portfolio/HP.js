@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
 import Card from '@material-ui/core/Card';
@@ -56,8 +56,7 @@ const adjustSpacing = makeStyles(() => ({
 export default function Hp() {
   const classes = useStyles();
   const spacing = adjustSpacing();
-  const [expanded, setExpanded] = React.useState(false);
-  const [hover, onHovered] = React.useState(false);
+  const [expanded, setExpanded] = useState(false);
 
   function handleExpandClick() {
     setExpanded(!expanded);
@@ -69,26 +68,26 @@ export default function Hp() {
         square={true}
         className={classes.card}
         raised={true}
-        onMouseLeave={() => onHovered(false)}
-        onMouseEnter={() => onHovered(true)}
-        onClick={() => onHovered(true)}
       >
         <CardContent spacing={spacing.root} className={styles.card}>
           <Typography variant="h4">HARRY POTTER DIRECTORY</Typography>
           <Typography variant="h5">FRONT-END APP</Typography>
         </CardContent>
-        { hover ? <CardMedia
-          className={classes.media}
-          image={HP}
-          title="screen shot of my HP site"
-        /> : '' }
-        <CardContent>
-          <p className={styles.caption}>
+        {!expanded ? (
+          <CardContent>
+            <p className={styles.caption}>
             A directory containing all characters and spells within the Harry
             Potter universe. Click below to view the deployed app or click the
             expand icon for project details and tech.
-          </p>
-        </CardContent>
+            </p>
+          </CardContent>
+        ) : (
+          <CardMedia
+            className={classes.media}
+            image={HP}
+            title="screen shot of my HP app"
+          />
+        )}
         <CardActions className={spacing.root}>
           <a href="https://harry-potter-directory.netlify.com">
             <button className={styles.anchorButtons}>
