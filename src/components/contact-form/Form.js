@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styles from './Form.css';
+import { Link } from 'react-router-dom';
 
 export default class Form extends Component {
   render() {
@@ -45,7 +46,7 @@ export default class Form extends Component {
             </label>
           </p>
           <p>
-            <button type="submit">SEND</button>
+            <Link to={'/success'}><button type="submit">SEND</button></Link>
           </p>
         </form>
       </div>
