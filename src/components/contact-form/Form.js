@@ -5,11 +5,10 @@ export default class Form extends Component {
     return (
       <>
         <form
-          id="form"
+          name="websiteForm"
           method="POST"
-          data-netlify="true"
         >
-          <input type="hidden" name="form-name" />
+          <input type="hidden" name="form-name" value="websiteForm" />
           <p>
             <label>
               <input
