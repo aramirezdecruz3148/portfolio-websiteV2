@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import styles from './Form.css';
 
 export default class Form extends Component {
   render() {
     return (
-      <>
+      <div className={styles.center}>
         <form
+          className={styles.form}
           name="websiteForm"
           method="POST"
         >
@@ -12,10 +14,10 @@ export default class Form extends Component {
           <p>
             <label>
               <input
-                className="feedback-input"
+                className={styles.inputs}
                 type="text"
                 name="name"
-                placeholder="name"
+                placeholder="NAME"
                 required
               />
             </label>
@@ -23,10 +25,10 @@ export default class Form extends Component {
           <p>
             <label>
               <input
-                className="feedback-input"
+                className={styles.inputs}
                 type="email"
                 name="email"
-                placeholder="email"
+                placeholder="EMAIL"
                 required
               />
             </label>
@@ -34,18 +36,18 @@ export default class Form extends Component {
           <p>
             <label>
               <textarea
-                className="feedback-input"
+                className={styles.inputs}
                 name="message"
-                placeholder="message"
+                placeholder="MESSAGE"
                 required
               ></textarea>
             </label>
           </p>
           <p>
-            <button type="submit">Send</button>
+            <button type="submit">SEND</button>
           </p>
         </form>
-      </>
+      </div>
     );
   }
 }
