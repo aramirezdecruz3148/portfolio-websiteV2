@@ -6,10 +6,15 @@ import Moddo from './Moddo';
 
 export default function Wrapper() {
   return (
-    <div className={styles.wrapper}>
-      <Hp />
-      <Bot />
-      <Moddo />
+    <div className={styles.top}>
+      <div className={styles.center}>
+        <h2 className={styles.title}>PORTFOLIO</h2>
+      </div>
+      <div className={styles.wrapper}>
+        <Hp />
+        <Bot />
+        <Moddo />
+      </div>
     </div>
   );
 }

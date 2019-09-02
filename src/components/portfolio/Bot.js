@@ -16,7 +16,7 @@ import { Typography } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
   card: {
-    width: '22vw',
+    width: '20vw',
   },
   media: {
     paddingTop: '12vw'

@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Assistant|Roboto+Condensed&display=swap');
 
-.spaceAround {
-  margin-left: .7vw;
-  margin-right: .7vw;
-  margin-top: 2vw;
-}
+/* .spaceAround {
+  margin-left: .1vw;
+  margin-right: .1vw;
+  margin-top: .5vw;
+} */
 
 .card h4 {
   font-family: 'Roboto Condensed', sans-serif;

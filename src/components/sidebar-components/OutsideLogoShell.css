@@ -1,6 +1,6 @@
 .shell {
   display: flex;
-  justify-content: flex-end;
+  justify-content: left;
   margin-left: 1.4vw;
   margin-top: 3vw;
 }
@@ -9,4 +9,5 @@
   width: 3vw;
   height: 3vw;
   margin-right: 6.4vw;
+  margin-left: .3vw;
 }
