@@ -6,7 +6,6 @@ export default class Form extends Component {
       <>
         <form
           id="form"
-          name="websiteForm"
           method="POST"
           data-netlify="true"
         >
