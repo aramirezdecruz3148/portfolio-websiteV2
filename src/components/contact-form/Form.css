@@ -8,8 +8,8 @@
 
 .form textarea {
   height: 10vw;
-  border-radius: 0;
-  box-shadow: none;
+  box-shadow: 0 .4vw .6vw 0 rgba(0, 0, 0, 0.2), 0 .5vw 1vw 0 rgba(0, 0, 0, 0.19);
+  border: white .1vw solid;
 }
 
 .inputs {
@@ -17,7 +17,6 @@
   font-weight: 500;
   font-size: 1.4vw;
   background-color: transparent;
-  border:.1vw solid black;
   transition: all 0.3s;
   padding: 1vw;
   margin-bottom: .5vw;
@@ -25,7 +24,8 @@
   color: #014044;
   box-sizing: border-box;
   border-radius: 0;
-  box-shadow: none;
+  border: white .1vw solid;
+  box-shadow: 0 .4vw .6vw 0 rgba(0, 0, 0, 0.2), 0 .5vw 1vw 0 rgba(0, 0, 0, 0.19);
 }
 
 [type="submit"] {
@@ -41,7 +41,7 @@
   transition: all 0.3s;
   margin-top: -.5vw;
   font-weight:700;
-  border:.1vw solid black;
+  box-shadow: 0 .4vw .6vw 0 rgba(0, 0, 0, 0.2), 0 .5vw 1vw 0 rgba(0, 0, 0, 0.19);
 }
 
 ::placeholder {
