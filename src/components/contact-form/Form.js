@@ -6,7 +6,7 @@ export default class Form extends Component {
     return (
       <div className={styles.center}>
         <form
-          action="/success"
+          action="/submitted"
           className={styles.form}
           name="websiteForm"
           method="POST"
