@@ -10,7 +10,7 @@ export default class App extends Component {
       <>
         <Router>
           <Route exact path='/' component={Home} />
-          <Route path='/submitted' component={Success} />
+          <Route path='/success' component={Success} />
         </Router>
       </>
     );

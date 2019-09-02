@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import styles from './Form.css';
-import { Link } from 'react-router-dom';
 
 export default class Form extends Component {
   render() {
     return (
       <div className={styles.center}>
         <form
-          action="/submitted"
+          action="./src/index.js/success"
           className={styles.form}
           name="websiteForm"
           method="POST"
@@ -46,7 +45,7 @@ export default class Form extends Component {
             </label>
           </p>
           <p>
-            <Link to='/submitted'><button type="submit">SEND</button></Link>
+            <button type="submit">SEND</button>
           </p>
         </form>
       </div>
