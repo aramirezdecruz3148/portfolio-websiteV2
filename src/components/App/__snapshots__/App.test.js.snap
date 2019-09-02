@@ -2,14 +2,16 @@
 
 exports[`App component renders App 1`] = `
 <Fragment>
-  <OnLoad
-    imageSrc="/path/image"
-  />
-  <div
-    className="app"
-  >
-    <Sidebar />
-    <MainContent />
-  </div>
+  <BrowserRouter>
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/"
+    />
+    <Route
+      component={[Function]}
+      path="/success"
+    />
+  </BrowserRouter>
 </Fragment>
 `;
