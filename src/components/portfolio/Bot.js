@@ -16,10 +16,9 @@ import { Typography } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
   card: {
-    maxWidth: '22vw'
+    width: '22vw',
   },
   media: {
-    height: '0',
     paddingTop: '12vw'
   },
   expand: {
@@ -30,7 +29,7 @@ const useStyles = makeStyles(theme => ({
     })
   },
   expandOpen: {
-    transform: 'rotate(180deg)'
+    transform: 'rotate(180deg)',
   },
   root: {
     fontSize: '2.2vw',
@@ -67,90 +66,93 @@ export default function Hp() {
   }
 
   return (
-    <Card
-      square={true}
-      className={classes.card}
-      raised={true}
-      onMouseLeave={() => onHovered(false)}
-      onMouseEnter={() => onHovered(true)}
-      onClick={() => onHovered(true)}
-    >
-      <CardContent spacing={spacing.root} className={styles.card}>
-        <Typography variant="h4">@AlchemyPDXBOT</Typography>
-        <Typography variant="h5">BACK-END APP</Typography>
-      </CardContent>
-      <CardMedia
-        className={classes.media}
-        image={hover ? alchemyBot : bwBot}
-        title="screen shot of my twitter bot"
-      />
-      <CardContent>
-        <p className={styles.caption}>
-          A whimsical twitter bot serving a coding community! Click below to
-          view the deployed app, the source code, or click the expand icon for
-          project details and tech.
-        </p>
-      </CardContent>
-      <CardActions className={spacing.root}>
-        <div className={styles.multipleLink}>
-          <a href="https://twitter.com/AlchemyPDXBot">
-            <button className={styles.anchorButtons}>
-              VIEW
-              <br />
-              APP
-            </button>
-          </a>
-          <a href="https://github.com/rainbow-robots/alchemy-community-bot">
-            <img className={styles.logo} src={github} />
-          </a>
-        </div>
-        <IconButton
-          className={clsx(classes.expand, {
-            [classes.expandOpen]: expanded
-          })}
-          onClick={handleExpandClick}
-          aria-expanded={expanded}
-          aria-label="show more"
-        >
-          <ExpandMoreIcon className={classes.root} />
-        </IconButton>
-      </CardActions>
-      <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <CardContent>
-          <Typography paragraph className={spacing.body1}>
-            AlchemyPDXBot is a twitter bot created by Claire Cassidy, Emily
-            Ford, and myself for the alchemy code lab community. If you have a
-            coding question just include our bot handle @AlchemyPDXBot and your
-            question with #help and the bot will post your original question so
-            the alchemy community can comment with answers/ideas. Had a long day
-            of coding and need a pick-me-up? Tweet @AlchemyPDXBot with #joke,
-            and our bot will tweet you a random coding joke. Did you meet a
-            milestone or have a favorite memory or pic of your time at alchemy?
-            Tweet @AlchemyPDXBot with #AlchemyMoment and it will be saved in a
-            collection and retweeted as a throwback once a week. We also have a
-            Rasberry Pi with a keypad of emojis we programmed, living within the
-            Alchemy building, coders can take a moment in their day to create an
-            emoji story on the keypad and our bot will post it. I handled the
-            communication between our code base and the Twitter API as well as
-            helped to create the models for our database and routes.
-          </Typography>
-          <Typography className={spacing.h5} variant="h5">
-            TECH
-          </Typography>
-          <Typography paragraph variant="body1" className={spacing.body1}>
-            • Node.js
-          </Typography>
-          <Typography paragraph variant="body1" className={spacing.body1}>
-            • MongoDB
-          </Typography>
-          <Typography paragraph variant="body1" className={spacing.body1}>
-            • Express
-          </Typography>
-          <Typography paragraph variant="body1" className={spacing.body1}>
-            • Jest
-          </Typography>
+    <div className={styles.spaceAround}>
+      <Card
+        square={true}
+        className={classes.card}
+        raised={true}
+        onMouseLeave={() => onHovered(false)}
+        onMouseEnter={() => onHovered(true)}
+        onClick={() => onHovered(true)}
+      >
+        <CardContent spacing={spacing.root} className={styles.card}>
+          <Typography variant="h4">@AlchemyPDXBOT</Typography>
+          <Typography variant="h5">BACK-END APP</Typography>
         </CardContent>
-      </Collapse>
-    </Card>
+        <CardMedia
+          className={classes.media}
+          image={hover ? alchemyBot : bwBot}
+          title="screen shot of my twitter bot"
+        />
+        <CardContent>
+          <p className={styles.caption} styles={{ marginBottom: '3vw' }}>
+            A whimsical twitter bot serving a coding community! Click below to
+            view the deployed app, the source code, or click the expand icon for
+            project details and tech.
+          </p>
+        </CardContent>
+        <CardActions className={spacing.root}>
+          <div className={styles.multipleLink}>
+            <a href="https://twitter.com/AlchemyPDXBot">
+              <button className={styles.anchorButtons}>
+                VIEW
+                <br />
+                APP
+              </button>
+            </a>
+            <a href="https://github.com/rainbow-robots/alchemy-community-bot">
+              <img className={styles.logo} src={github} />
+            </a>
+          </div>
+          <IconButton
+            className={clsx(classes.expand, {
+              [classes.expandOpen]: expanded
+            })}
+            onClick={handleExpandClick}
+            aria-expanded={expanded}
+            aria-label="show more"
+          >
+            <ExpandMoreIcon className={classes.root} />
+          </IconButton>
+        </CardActions>
+        <Collapse in={expanded} timeout="auto" unmountOnExit>
+          <CardContent>
+            <Typography paragraph className={spacing.body1}>
+              AlchemyPDXBot is a twitter bot created by Claire Cassidy, Emily
+              Ford, and myself for the alchemy code lab community. If you have a
+              coding question just include our bot handle @AlchemyPDXBot and
+              your question with #help and the bot will post your original
+              question so the alchemy community can comment with answers/ideas.
+              Had a long day of coding and need a pick-me-up? Tweet
+              @AlchemyPDXBot with #joke, and our bot will tweet you a random
+              coding joke. Did you meet a milestone or have a favorite memory or
+              pic of your time at alchemy? Tweet @AlchemyPDXBot with
+              #AlchemyMoment and it will be saved in a collection and retweeted
+              as a throwback once a week. We also have a Rasberry Pi with a
+              keypad of emojis we programmed, living within the Alchemy
+              building, coders can take a moment in their day to create an emoji
+              story on the keypad and our bot will post it. I handled the
+              communication between our code base and the Twitter API as well as
+              helped to create the models for our database and routes.
+            </Typography>
+            <Typography className={spacing.h5} variant="h5">
+              TECH
+            </Typography>
+            <Typography paragraph variant="body1" className={spacing.body1}>
+              • Node.js
+            </Typography>
+            <Typography paragraph variant="body1" className={spacing.body1}>
+              • MongoDB
+            </Typography>
+            <Typography paragraph variant="body1" className={spacing.body1}>
+              • Express
+            </Typography>
+            <Typography paragraph variant="body1" className={spacing.body1}>
+              • Jest
+            </Typography>
+          </CardContent>
+        </Collapse>
+      </Card>
+    </div>
   );
 }

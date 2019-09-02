@@ -9,8 +9,8 @@ import Collapse from '@material-ui/core/Collapse';
 import IconButton from '@material-ui/core/IconButton';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import styles from './PortfolioCards.css';
-import bwHP from '../../assets/bw-HP.png';
-import HP from '../../assets/HP.png';
+import bwModdo from '../../assets/bw-moddo.png';
+import moddo from '../../assets/moddo.png';
 import { Typography } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
@@ -54,7 +54,7 @@ const adjustSpacing = makeStyles(() => ({
   }
 }));
 
-export default function Hp() {
+export default function Moddo() {
   const classes = useStyles();
   const spacing = adjustSpacing();
   const [expanded, setExpanded] = React.useState(false);
@@ -75,23 +75,24 @@ export default function Hp() {
         onClick={() => onHovered(true)}
       >
         <CardContent spacing={spacing.root} className={styles.card}>
-          <Typography variant="h4">HARRY POTTER DIRECTORY</Typography>
+          <Typography variant="h4">MODDO</Typography>
           <Typography variant="h5">FRONT-END APP</Typography>
         </CardContent>
         <CardMedia
           className={classes.media}
-          image={hover ? HP : bwHP}
+          image={hover ? moddo : bwModdo}
           title="screen shot of my HP site"
         />
         <CardContent>
           <p className={styles.caption}>
-            A directory containing all characters and spells within the Harry
-            Potter universe. Click below to view the deployed app or click the
-            expand icon for project details and tech.
+            Moddo was created to begin your day with a random motto as well as
+            providing a space to keep track of your lists/tasks. Click below to
+            view the deployed app or click the expand icon for project details
+            and tech.
           </p>
         </CardContent>
         <CardActions className={spacing.root}>
-          <a href="https://harry-potter-directory.netlify.com">
+          <a href="https://moddo.netlify.com/">
             <button className={styles.anchorButtons}>
               VIEW
               <br />
@@ -112,15 +113,14 @@ export default function Hp() {
         <Collapse in={expanded} timeout="auto" unmountOnExit>
           <CardContent>
             <Typography paragraph className={spacing.body1}>
-              I created this project as a directory and resource for all
-              characters and spells within the Harry Potter universe. The
-              character directory provides details on each characters school,
-              house, and blood status as well as the ability to filter all
-              characters based on house, blood status and group affiliation
-              (D.A, Death Eater, etc). The spell directory provides a list of
-              all spells in alphabetical order that appear within the 7 books of
-              the Harry Potter series. For each spell you are given the type
-              (charm, hex, curse, etc) and the effect of the spell.
+              Moddo is an app created by Vasily Markov, Jon Forney, Danny
+              Suarez, Emily Ford, and myself. We designed a space to start your
+              day by receiving a random motto, and a place to manage your daily
+              tasks. You have the ability as a user to create an account,
+              favorite and revisit mottos you like, as well as build and manage
+              different task lists. I handled the API calls, the building of
+              components and data flow between them, as well as mapping our data
+              in Firebase.
             </Typography>
             <Typography className={spacing.h5} variant="h5">
               TECH
@@ -132,7 +132,13 @@ export default function Hp() {
               • HTML/CSS
             </Typography>
             <Typography paragraph variant="body1" className={spacing.body1}>
-              • Harry Potter API
+              • Firebase
+            </Typography>
+            <Typography paragraph variant="body1" className={spacing.body1}>
+              • Random Advice and Lorem Picsum APIs
+            </Typography>
+            <Typography paragraph variant="body1" className={spacing.body1}>
+              • QUnit
             </Typography>
           </CardContent>
         </Collapse>
