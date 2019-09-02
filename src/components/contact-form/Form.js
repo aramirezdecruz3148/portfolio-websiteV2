@@ -8,7 +8,7 @@ export default class Form extends Component {
           id="form"
           method="POST"
         >
-          <input type="hidden" name="form-name" />
+          <input type="hidden" name="form-name" value="websiteForm" />
           <p>
             <label>
               <input
