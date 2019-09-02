@@ -58,7 +58,6 @@ export default function Hp() {
   const classes = useStyles();
   const spacing = adjustSpacing();
   const [expanded, setExpanded] = React.useState(false);
-  const [hover, onHovered] = React.useState(false);
 
   function handleExpandClick() {
     setExpanded(!expanded);
@@ -70,26 +69,26 @@ export default function Hp() {
         square={true}
         className={classes.card}
         raised={true}
-        onMouseLeave={() => onHovered(false)}
-        onMouseEnter={() => onHovered(true)}
-        onClick={() => onHovered(true)}
       >
         <CardContent spacing={spacing.root} className={styles.card}>
           <Typography variant="h4">@AlchemyPDXBOT</Typography>
           <Typography variant="h5">BACK-END APP</Typography>
         </CardContent>
-        { hover ? <CardMedia
-          className={classes.media}
-          image={alchemyBot}
-          title="screen shot of my twitter bot"
-        /> : '' }
-        <CardContent>
-          <p className={styles.caption} styles={{ marginBottom: '3vw' }}>
+        {!expanded ? (
+          <CardContent>
+            <p className={styles.caption}>
             A whimsical twitter bot serving a coding community! Click below to
             view the deployed app, the source code, or click the expand icon for
             project details and tech.
-          </p>
-        </CardContent>
+            </p>
+          </CardContent>
+        ) : (
+          <CardMedia
+            className={classes.media}
+            image={alchemyBot}
+            title="screen shot of my twitter bot"
+          />
+        )}
         <CardActions className={spacing.root}>
           <div className={styles.multipleLink}>
             <a href="https://twitter.com/AlchemyPDXBot">

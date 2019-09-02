@@ -57,7 +57,6 @@ export default function Moddo() {
   const classes = useStyles();
   const spacing = adjustSpacing();
   const [expanded, setExpanded] = React.useState(false);
-  const [hover, onHovered] = React.useState(false);
 
   function handleExpandClick() {
     setExpanded(!expanded);
@@ -65,31 +64,27 @@ export default function Moddo() {
 
   return (
     <div className={styles.spaceAround}>
-      <Card
-        square={true}
-        className={classes.card}
-        raised={true}
-        onMouseLeave={() => onHovered(false)}
-        onMouseEnter={() => onHovered(true)}
-        onClick={() => onHovered(true)}
-      >
+      <Card square={true} className={classes.card} raised={true}>
         <CardContent spacing={spacing.root} className={styles.card}>
           <Typography variant="h4">MODDO</Typography>
           <Typography variant="h5">FRONT-END APP</Typography>
         </CardContent>
-        { hover ? <CardMedia
-          className={classes.media}
-          image={moddo}
-          title="screen shot of my app Moddo"
-        /> : '' }
-        <CardContent>
-          <p className={styles.caption}>
-            Moddo was created to begin your day with a random motto as well as
-            providing a space to keep track of your lists/tasks. Click below to
-            view the deployed app or click the expand icon for project details
-            and tech.
-          </p>
-        </CardContent>
+        {!expanded ? (
+          <CardContent>
+            <p className={styles.caption}>
+              Moddo was created to begin your day with a random motto as well as
+              providing a space to keep track of your lists/tasks. Click below
+              to view the deployed app or click the expand icon for project
+              details and tech.
+            </p>
+          </CardContent>
+        ) : (
+          <CardMedia
+            className={classes.media}
+            image={moddo}
+            title="screen shot of my app Moddo"
+          />
+        )}
         <CardActions className={spacing.root}>
           <a href="https://moddo.netlify.com/">
             <button className={styles.anchorButtons}>
