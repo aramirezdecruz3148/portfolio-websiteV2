@@ -6,11 +6,12 @@ export default class Form extends Component {
     return (
       <div className={styles.center}>
         <form
+          action="/success"
           className={styles.form}
           name="websiteForm"
           method="POST"
         >
-          <input type="hidden" name="form-name" value="websiteForm" action="/success"/>
+          <input type="hidden" name="form-name" value="websiteForm" />
           <p>
             <label>
               <input
