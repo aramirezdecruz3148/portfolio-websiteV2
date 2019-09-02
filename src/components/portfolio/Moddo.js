@@ -9,7 +9,6 @@ import Collapse from '@material-ui/core/Collapse';
 import IconButton from '@material-ui/core/IconButton';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import styles from './PortfolioCards.css';
-import bwModdo from '../../assets/bw-moddo.png';
 import moddo from '../../assets/moddo.png';
 import { Typography } from '@material-ui/core';
 
@@ -78,11 +77,11 @@ export default function Moddo() {
           <Typography variant="h4">MODDO</Typography>
           <Typography variant="h5">FRONT-END APP</Typography>
         </CardContent>
-        <CardMedia
+        { hover ? <CardMedia
           className={classes.media}
-          image={hover ? moddo : bwModdo}
-          title="screen shot of my HP site"
-        />
+          image={moddo}
+          title="screen shot of my app Moddo"
+        /> : '' }
         <CardContent>
           <p className={styles.caption}>
             Moddo was created to begin your day with a random motto as well as

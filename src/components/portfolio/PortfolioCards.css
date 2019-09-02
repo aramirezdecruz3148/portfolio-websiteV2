@@ -59,6 +59,6 @@
 }
 
 .logo:hover {
-  background: #b19cd9;
+  background: rgb(199, 199, 199);
   transform: scale(1.2);
 }

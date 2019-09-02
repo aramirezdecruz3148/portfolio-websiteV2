@@ -9,7 +9,6 @@ import Collapse from '@material-ui/core/Collapse';
 import IconButton from '@material-ui/core/IconButton';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import styles from './PortfolioCards.css';
-import bwHP from '../../assets/bw-HP.png';
 import HP from '../../assets/HP.png';
 import { Typography } from '@material-ui/core';
 
@@ -78,11 +77,11 @@ export default function Hp() {
           <Typography variant="h4">HARRY POTTER DIRECTORY</Typography>
           <Typography variant="h5">FRONT-END APP</Typography>
         </CardContent>
-        <CardMedia
+        { hover ? <CardMedia
           className={classes.media}
-          image={hover ? HP : bwHP}
+          image={HP}
           title="screen shot of my HP site"
-        />
+        /> : '' }
         <CardContent>
           <p className={styles.caption}>
             A directory containing all characters and spells within the Harry

@@ -9,7 +9,6 @@ import Collapse from '@material-ui/core/Collapse';
 import IconButton from '@material-ui/core/IconButton';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import styles from './PortfolioCards.css';
-import bwBot from '../../assets/bw-alchemyBot.png';
 import alchemyBot from '../../assets/alchemyBot.png';
 import github from '../../assets/githubLogo.png';
 import { Typography } from '@material-ui/core';
@@ -79,11 +78,11 @@ export default function Hp() {
           <Typography variant="h4">@AlchemyPDXBOT</Typography>
           <Typography variant="h5">BACK-END APP</Typography>
         </CardContent>
-        <CardMedia
+        { hover ? <CardMedia
           className={classes.media}
-          image={hover ? alchemyBot : bwBot}
+          image={alchemyBot}
           title="screen shot of my twitter bot"
-        />
+        /> : '' }
         <CardContent>
           <p className={styles.caption} styles={{ marginBottom: '3vw' }}>
             A whimsical twitter bot serving a coding community! Click below to
