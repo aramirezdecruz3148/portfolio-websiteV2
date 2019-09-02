@@ -4,7 +4,7 @@ import styles from './Form.css';
 export default class Form extends Component {
   render() {
     return (
-      <>
+      <div className={styles.center}>
         <form
           className={styles.form}
           name="websiteForm"
@@ -47,7 +47,7 @@ export default class Form extends Component {
             <button type="submit">SEND</button>
           </p>
         </form>
-      </>
+      </div>
     );
   }
 }
