@@ -7,7 +7,6 @@ export default class Form extends Component {
         <form
           id="form"
           method="POST"
-          data-netlify="true"
         >
           <input type="hidden" name="form-name" />
           <p>
