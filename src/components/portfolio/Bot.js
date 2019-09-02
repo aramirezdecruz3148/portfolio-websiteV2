@@ -9,8 +9,9 @@ import Collapse from '@material-ui/core/Collapse';
 import IconButton from '@material-ui/core/IconButton';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import styles from './PortfolioCards.css';
-import bwHP from '../../assets/bw-HP.png';
-import HP from '../../assets/HP.png';
+import bwBot from '../../assets/bw-alchemyBot.png';
+import alchemyBot from '../../assets/alchemyBot.png';
+import github from '../../assets/githubLogo.png';
 import { Typography } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
@@ -75,29 +76,34 @@ export default function Hp() {
       onClick={() => onHovered(true)}
     >
       <CardContent spacing={spacing.root} className={styles.card}>
-        <Typography variant="h4">HARRY POTTER DIRECTORY</Typography>
-        <Typography variant="h5">FRONT-END APP</Typography>
+        <Typography variant="h4">@AlchemyPDXBOT</Typography>
+        <Typography variant="h5">BACK-END APP</Typography>
       </CardContent>
       <CardMedia
         className={classes.media}
-        image={hover ? HP : bwHP}
-        title="screen shot of my HP site"
+        image={hover ? alchemyBot : bwBot}
+        title="screen shot of my twitter bot"
       />
       <CardContent>
         <p className={styles.caption}>
-          A directory containing all characters and spells within the Harry
-          Potter universe. Click below to view the deployed app or click the
-          expand icon for project details and tech.
+          A whimsical twitter bot serving a coding community! Click below to
+          view the deployed app, the source code, or click the expand icon for
+          project details and tech.
         </p>
       </CardContent>
       <CardActions className={spacing.root}>
-        <a href="https://harry-potter-directory.netlify.com">
-          <button className={styles.anchorButtons}>
-            VIEW
-            <br />
-            APP
-          </button>
-        </a>
+        <div className={styles.multipleLink}>
+          <a href="https://twitter.com/AlchemyPDXBot">
+            <button className={styles.anchorButtons}>
+              VIEW
+              <br />
+              APP
+            </button>
+          </a>
+          <a href="https://github.com/rainbow-robots/alchemy-community-bot">
+            <img className={styles.logo} src={github} />
+          </a>
+        </div>
         <IconButton
           className={clsx(classes.expand, {
             [classes.expandOpen]: expanded
@@ -112,27 +118,36 @@ export default function Hp() {
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
           <Typography paragraph className={spacing.body1}>
-            I created this project as a directory and resource for all
-            characters and spells within the Harry Potter universe. The
-            character directory provides details on each characters school,
-            house, and blood status as well as the ability to filter all
-            characters based on house, blood status and group affiliation (D.A,
-            Death Eater, etc). The spell directory provides a list of all spells
-            in alphabetical order that appear within the 7 books of the Harry
-            Potter series. For each spell you are given the type (charm, hex,
-            curse, etc) and the effect of the spell.
+            AlchemyPDXBot is a twitter bot created by Claire Cassidy, Emily
+            Ford, and myself for the alchemy code lab community. If you have a
+            coding question just include our bot handle @AlchemyPDXBot and your
+            question with #help and the bot will post your original question so
+            the alchemy community can comment with answers/ideas. Had a long day
+            of coding and need a pick-me-up? Tweet @AlchemyPDXBot with #joke,
+            and our bot will tweet you a random coding joke. Did you meet a
+            milestone or have a favorite memory or pic of your time at alchemy?
+            Tweet @AlchemyPDXBot with #AlchemyMoment and it will be saved in a
+            collection and retweeted as a throwback once a week. We also have a
+            Rasberry Pi with a keypad of emojis we programmed, living within the
+            Alchemy building, coders can take a moment in their day to create an
+            emoji story on the keypad and our bot will post it. I handled the
+            communication between our code base and the Twitter API as well as
+            helped to create the models for our database and routes.
           </Typography>
           <Typography className={spacing.h5} variant="h5">
             TECH
           </Typography>
           <Typography paragraph variant="body1" className={spacing.body1}>
-            • JavaScript Components
+            • Node.js
           </Typography>
           <Typography paragraph variant="body1" className={spacing.body1}>
-            • HTML/CSS
+            • MongoDB
           </Typography>
           <Typography paragraph variant="body1" className={spacing.body1}>
-            • Harry Potter API
+            • Express
+          </Typography>
+          <Typography paragraph variant="body1" className={spacing.body1}>
+            • Jest
           </Typography>
         </CardContent>
       </Collapse>

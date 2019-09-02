@@ -32,7 +32,6 @@
   background: black;
   transform: scale(1.2);
   text-align: center;
-  padding: .1vw;
 }
 
 .caption {
@@ -43,4 +42,19 @@
   line-height: none;
   font-style: italic;
   margin-bottom: -1vw;
+}
+
+.multipleLink {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 3vw;
+  margin-left: .5vw;
+}
+
+.logo:hover {
+  background: #b19cd9;
+  transform: scale(1.2);
 }
