@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Assistant|Roboto+Condensed&display=swap');
+
 .top {
   margin-top: 6vw;
 }
@@ -9,14 +11,20 @@
   justify-content: center;
 }
 
-.buttonImg {
-  width: 1.5vw;
+.buttonArrow {
+  border: none;
+  font-size: 2vw;
 }
 
 .title {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 2vw;
-  margin-bottom: 2vw;
+  margin-bottom: -.9vw;
+}
+
+.caption {
+  font-family: 'Assistant', sans-serif;
+  font-size: 1.2vw;
 }
 
 .center {

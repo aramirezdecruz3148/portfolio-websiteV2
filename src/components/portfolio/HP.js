@@ -14,10 +14,11 @@ import { Typography } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
   card: {
-    width: '22vw'
+    width: '44vw'
   },
   media: {
-    paddingTop: '12vw'
+    paddingTop: '12vw',
+    height: '13vw'
   },
   expand: {
     transform: 'rotate(0deg)',
@@ -31,6 +32,7 @@ const useStyles = makeStyles(theme => ({
   },
   root: {
     fontSize: '2.2vw',
+    color: 'black',
     padding: '0'
   }
 }));
