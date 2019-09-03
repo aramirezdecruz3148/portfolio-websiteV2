@@ -14,7 +14,7 @@ import { Typography } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
   card: {
-    width: '22vw'
+    width: '35vw'
   },
   media: {
     paddingTop: '12vw'
@@ -64,7 +64,11 @@ export default function Moddo() {
 
   return (
     <div className={styles.spaceAround}>
-      <Card square={true} className={classes.card} raised={true}>
+      <Card 
+        square={true} 
+        className={classes.card} 
+        raised={true}
+      >
         <CardContent spacing={spacing.root} className={styles.card}>
           <Typography variant="h4">MODDO</Typography>
           <Typography variant="h5">FRONT-END APP</Typography>
