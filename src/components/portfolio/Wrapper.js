@@ -36,11 +36,11 @@ export default function Wrapper() {
         <div className={styles.wrapper}>
           <button
             disabled={countObj.previous}
-            onClick={() => updateState(decrementNewCount)}><img src={decrease}/></button>
+            onClick={() => updateState(decrementNewCount)}><img className={styles.buttonImg} src={decrease}/></button>
           <Bot />
           <button
             disabled={countObj.next}
-            onClick={() => updateState(incrementNewCount)}><img src={increase}/></button>
+            onClick={() => updateState(incrementNewCount)}><img className={styles.buttonImg} src={increase}/></button>
         </div>
       </div>
     );
@@ -54,11 +54,11 @@ export default function Wrapper() {
         <div className={styles.wrapper}>
           <button
             disabled={countObj.previous}
-            onClick={() => updateState(decrementNewCount)}><img src={decrease}/></button>
+            onClick={() => updateState(decrementNewCount)}><img className={styles.buttonImg} src={decrease}/></button>
           <Moddo />
           <button
             disabled={countObj.next}
-            onClick={() => updateState(incrementNewCount)}><img src={increase}/></button>
+            onClick={() => updateState(incrementNewCount)}><img className={styles.buttonImg} src={increase}/></button>
         </div>
       </div>
     );
@@ -73,11 +73,11 @@ export default function Wrapper() {
       <div className={styles.wrapper}>
         <button
           disabled={countObj.previous}
-          onClick={() => updateState(decrementNewCount)}><img src={decrease}/></button>
+          onClick={() => updateState(decrementNewCount)}><img className={styles.buttonImg} src={decrease}/></button>
         <Hp />
         <button
           disabled={countObj.next}
-          onClick={() => updateState(incrementNewCount)}><img src={increase}/></button>
+          onClick={() => updateState(incrementNewCount)}><img className={styles.buttonImg} src={increase}/></button>
       </div>
     </div>
   );
