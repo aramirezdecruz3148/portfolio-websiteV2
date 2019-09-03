@@ -4,7 +4,9 @@ import Hp from './HP';
 import Bot from './Bot';
 import Moddo from './Moddo';
 import decrease from '../../assets/decrease.png';
+import disabledDecrease from '../../assets/disableDecrease.png';
 import increase from '../../assets/increase.png';
+import disabledIncrease from '../../assets/disabledIncrease.png';
 
 const portfolio = [Hp, Bot, Moddo];
 
@@ -36,11 +38,11 @@ export default function Wrapper() {
         <div className={styles.wrapper}>
           <button
             disabled={countObj.previous}
-            onClick={() => updateState(decrementNewCount)}><img className={styles.buttonImg} src={decrease}/></button>
+            onClick={() => updateState(decrementNewCount)}><img className={styles.buttonImg} src={countObj.previous ? disabledDecrease : decrease}/></button>
           <Bot />
           <button
             disabled={countObj.next}
-            onClick={() => updateState(incrementNewCount)}><img className={styles.buttonImg} src={increase}/></button>
+            onClick={() => updateState(incrementNewCount)}><img className={styles.buttonImg} src={countObj.next ? disabledIncrease : increase}/></button>
         </div>
       </div>
     );
@@ -54,11 +56,11 @@ export default function Wrapper() {
         <div className={styles.wrapper}>
           <button
             disabled={countObj.previous}
-            onClick={() => updateState(decrementNewCount)}><img className={styles.buttonImg} src={decrease}/></button>
+            onClick={() => updateState(decrementNewCount)}><img className={styles.buttonImg} src={countObj.previous ? disabledDecrease : decrease}/></button>
           <Moddo />
           <button
             disabled={countObj.next}
-            onClick={() => updateState(incrementNewCount)}><img className={styles.buttonImg} src={increase}/></button>
+            onClick={() => updateState(incrementNewCount)}><img className={styles.buttonImg} src={countObj.next ? disabledIncrease : increase}/></button>
         </div>
       </div>
     );
@@ -73,11 +75,11 @@ export default function Wrapper() {
       <div className={styles.wrapper}>
         <button
           disabled={countObj.previous}
-          onClick={() => updateState(decrementNewCount)}><img className={styles.buttonImg} src={decrease}/></button>
+          onClick={() => updateState(decrementNewCount)}><img className={styles.buttonImg} src={countObj.previous ? disabledDecrease : decrease}/></button>
         <Hp />
         <button
           disabled={countObj.next}
-          onClick={() => updateState(incrementNewCount)}><img className={styles.buttonImg} src={increase}/></button>
+          onClick={() => updateState(incrementNewCount)}><img className={styles.buttonImg} src={countObj.next ? disabledIncrease : increase}/></button>
       </div>
     </div>
   );

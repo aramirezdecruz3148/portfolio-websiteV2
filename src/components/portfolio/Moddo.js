@@ -32,7 +32,8 @@ const useStyles = makeStyles(theme => ({
   },
   root: {
     fontSize: '2.2vw',
-    padding: '0'
+    padding: '0',
+    color: 'black',
   }
 }));
 

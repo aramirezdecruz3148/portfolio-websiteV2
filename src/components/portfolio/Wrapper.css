@@ -9,6 +9,10 @@
   justify-content: center;
 }
 
+.wrapper button {
+  border: none;
+}
+
 .buttonImg {
   width: 1.5vw;
 }
