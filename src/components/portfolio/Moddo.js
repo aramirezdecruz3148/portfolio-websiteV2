@@ -86,7 +86,7 @@ export default function Moddo() {
           />
         )}
         <CardActions className={spacing.root}>
-          <a href="https://moddo.netlify.com/">
+          <a href="https://moddo.netlify.com/" rel="noopener noreferrer" target="_blank">
             <button className={styles.anchorButtons}>
               VIEW
               <br />

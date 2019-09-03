@@ -91,14 +91,14 @@ export default function Hp() {
         )}
         <CardActions className={spacing.root}>
           <div className={styles.multipleLink}>
-            <a href="https://twitter.com/AlchemyPDXBot">
+            <a href="https://twitter.com/AlchemyPDXBot" rel="noopener noreferrer" target="_blank">
               <button className={styles.anchorButtons}>
                 VIEW
                 <br />
                 APP
               </button>
             </a>
-            <a href="https://github.com/rainbow-robots/alchemy-community-bot">
+            <a href="https://github.com/rainbow-robots/alchemy-community-bot" rel="noopener noreferrer" target="_blank">
               <img className={styles.logo} src={github} />
             </a>
           </div>

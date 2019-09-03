@@ -25,13 +25,13 @@ const OutsideLogo = posed.img({
 export default function OutsideLogoShell() {
   return (
     <div className={styles.shell}>
-      <a href='https://www.linkedin.com/in/alex-ramirez-de-cruz/'>
+      <a href='https://www.linkedin.com/in/alex-ramirez-de-cruz/' rel='noopener noreferrer' target='_blank'>
         <OutsideLogo className={styles.outsideLogo} src={linkedinLogo} />
       </a>
-      <a href='https://github.com/aramirezdecruz3148'>
+      <a href='https://github.com/aramirezdecruz3148' rel='noopener noreferrer' target='_blank'>
         <OutsideLogo className={styles.outsideLogo} src={githubLogo} />
       </a>
-      <a href='https://twitter.com/dev_de_cruz'>
+      <a href='https://twitter.com/dev_de_cruz' rel='noopener noreferrer' target='_blank'>
         <OutsideLogo className={styles.outsideLogo} src={twitterLogo} />
       </a>
     </div>
