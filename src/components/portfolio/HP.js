@@ -89,7 +89,7 @@ export default function Hp() {
           />
         )}
         <CardActions className={spacing.root}>
-          <a href="https://harry-potter-directory.netlify.com">
+          <a href="https://harry-potter-directory.netlify.com" rel="noopener noreferrer" target="_blank">
             <button className={styles.anchorButtons}>
               VIEW
               <br />
