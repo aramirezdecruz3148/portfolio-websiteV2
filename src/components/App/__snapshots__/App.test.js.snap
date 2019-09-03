@@ -10,7 +10,7 @@ exports[`App component renders App 1`] = `
     />
     <Route
       component={[Function]}
-      path="/submit"
+      path="/success"
     />
   </BrowserRouter>
 </Fragment>
