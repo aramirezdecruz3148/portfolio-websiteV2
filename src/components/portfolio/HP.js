@@ -14,10 +14,11 @@ import { Typography } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
   card: {
-    width: '35vw'
+    width: '44vw'
   },
   media: {
-    paddingTop: '12vw'
+    paddingTop: '12vw',
+    height: '13vw'
   },
   expand: {
     transform: 'rotate(0deg)',
