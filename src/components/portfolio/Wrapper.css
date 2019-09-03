@@ -9,12 +9,9 @@
   justify-content: center;
 }
 
-.wrapper button {
+.buttonArrow {
   border: none;
-}
-
-.buttonImg {
-  width: 1.5vw;
+  font-size: 2vw;
 }
 
 .title {
