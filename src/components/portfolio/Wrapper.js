@@ -3,6 +3,8 @@ import styles from './Wrapper.css';
 import Hp from './HP';
 import Bot from './Bot';
 import Moddo from './Moddo';
+import decrease from '../../assets/decrease.png';
+import increase from '../../assets/increase.png';
 
 const portfolio = [Hp, Bot, Moddo];
 
@@ -29,22 +31,17 @@ export default function Wrapper() {
       <div className={styles.top}>
         <div className={styles.center}>
           <h2 className={styles.title}>PORTFOLIO</h2>
+          <p>{countObj.count + 1} of {portfolio.length}</p>
         </div>
-        <button
-          disabled={countObj.previous}
-          onClick={() => updateState(decrementNewCount)}
-        >
-          decrease
-        </button>
         <div className={styles.wrapper}>
+          <button
+            disabled={countObj.previous}
+            onClick={() => updateState(decrementNewCount)}><img src={decrease}/></button>
           <Bot />
+          <button
+            disabled={countObj.next}
+            onClick={() => updateState(incrementNewCount)}><img src={increase}/></button>
         </div>
-        <button
-          disabled={countObj.next}
-          onClick={() => updateState(incrementNewCount)}
-        >
-          increase
-        </button>
       </div>
     );
   } else if(countObj.count === 2) {
@@ -52,22 +49,17 @@ export default function Wrapper() {
       <div className={styles.top}>
         <div className={styles.center}>
           <h2 className={styles.title}>PORTFOLIO</h2>
+          <p>{countObj.count + 1} of {portfolio.length}</p>
         </div>
-        <button
-          disabled={countObj.previous}
-          onClick={() => updateState(decrementNewCount)}
-        >
-          decrease
-        </button>
         <div className={styles.wrapper}>
+          <button
+            disabled={countObj.previous}
+            onClick={() => updateState(decrementNewCount)}><img src={decrease}/></button>
           <Moddo />
+          <button
+            disabled={countObj.next}
+            onClick={() => updateState(incrementNewCount)}><img src={increase}/></button>
         </div>
-        <button
-          disabled={countObj.next}
-          onClick={() => updateState(incrementNewCount)}
-        >
-          increase
-        </button>
       </div>
     );
   }
@@ -76,22 +68,17 @@ export default function Wrapper() {
     <div className={styles.top}>
       <div className={styles.center}>
         <h2 className={styles.title}>PORTFOLIO</h2>
+        <p>{countObj.count + 1} of {portfolio.length}</p>
       </div>
-      <button
-        disabled={countObj.previous}
-        onClick={() => updateState(decrementNewCount)}
-      >
-        decrease
-      </button>
       <div className={styles.wrapper}>
+        <button
+          disabled={countObj.previous}
+          onClick={() => updateState(decrementNewCount)}><img src={decrease}/></button>
         <Hp />
+        <button
+          disabled={countObj.next}
+          onClick={() => updateState(incrementNewCount)}><img src={increase}/></button>
       </div>
-      <button
-        disabled={countObj.next}
-        onClick={() => updateState(incrementNewCount)}
-      >
-        increase
-      </button>
     </div>
   );
 }
