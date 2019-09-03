@@ -29,7 +29,7 @@ export default function Wrapper() {
       <div className={styles.top}>
         <div className={styles.center}>
           <h2 className={styles.title}>PORTFOLIO</h2>
-          <p>{countObj.count + 1} of {portfolio.length}</p>
+          <p className={styles.caption}>{countObj.count + 1} of {portfolio.length}</p>
         </div>
         <div className={styles.wrapper}>
           <button
@@ -49,7 +49,7 @@ export default function Wrapper() {
       <div className={styles.top}>
         <div className={styles.center}>
           <h2 className={styles.title}>PORTFOLIO</h2>
-          <p>{countObj.count + 1} of {portfolio.length}</p>
+          <p className={styles.caption}>{countObj.count + 1} of {portfolio.length}</p>
         </div>
         <div className={styles.wrapper}>
           <button
@@ -70,7 +70,7 @@ export default function Wrapper() {
     <div className={styles.top}>
       <div className={styles.center}>
         <h2 className={styles.title}>PORTFOLIO</h2>
-        <p>{countObj.count + 1} of {portfolio.length}</p>
+        <p className={styles.caption}>{countObj.count + 1} of {portfolio.length}</p>
       </div>
       <div className={styles.wrapper}>
         <button
