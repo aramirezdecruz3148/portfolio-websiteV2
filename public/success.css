@@ -2,7 +2,7 @@
 
 #home-button {
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 1vw;
+  font-size: 3vw;
   font-weight: bolder;
   color: rgb(29, 29, 29);
   background: white;
@@ -11,6 +11,7 @@
   height: 5vw;
   text-align: center;
   padding: .1vw;
+  margin-top: 2vw;
 }
 
 #home-button:hover {
@@ -31,6 +32,7 @@
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 2vw;
   text-align: center;
+  margin-top: 1vw;
 }
 
 #text {
