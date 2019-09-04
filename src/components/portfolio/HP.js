@@ -43,12 +43,12 @@ const adjustSpacing = makeStyles(() => ({
   },
   body1: {
     fontFamily: 'Assistant',
-    fontSize: '1vw',
+    fontSize: '1.5vw',
     margin: '0'
   },
   h5: {
     fontFamily: 'Roboto Condensed',
-    fontSize: '1.2vw',
+    fontSize: '1.5vw',
     fontWeight: 'bolder',
     marginTop: '1vw',
     textAlign: 'left'
