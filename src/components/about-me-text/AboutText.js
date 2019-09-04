@@ -12,6 +12,7 @@ export default function AboutText() {
         As a queer woman of color I am extremely passionate about diversity
         within the tech community and creating applications that are accessible
         and can speak across divides.
+        I bring my sense of play, love of coding and creativity to each new build!
       </p>
     </>
   );
