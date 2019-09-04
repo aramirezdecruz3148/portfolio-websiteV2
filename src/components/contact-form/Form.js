@@ -11,7 +11,7 @@ export default class Form extends Component {
           name="websiteForm"
           method="POST"
         >
-          <input type="hidden" name="form-name" value="/sucess" />
+          <input type="hidden" name="form-name" value="websiteForm" />
           <p>
             <label>
               <input
@@ -45,7 +45,7 @@ export default class Form extends Component {
             </label>
           </p>
           <p>
-            <button onClick={this.handleModal} type="submit">SEND</button>
+            <button type="submit">SEND</button>
           </p>
         </form>
       </div>
