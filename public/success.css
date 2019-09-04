@@ -7,8 +7,8 @@
   color: rgb(29, 29, 29);
   background: white;
   border: solid rgb(31, 31, 31) .1vw;
-  width: 3vw;
-  height: 3vw;
+  width: 5vw;
+  height: 5vw;
   text-align: center;
   padding: .1vw;
 }
@@ -24,6 +24,7 @@
   width: 25vw;
   height: 25vw;
   margin-right: 2vw;
+  box-shadow: 0 .4vw .6vw 0 rgba(0, 0, 0, 0.2), 0 .5vw 1vw 0 rgba(0, 0, 0, 0.19);
 }
 
 #title {
@@ -49,5 +50,5 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 5vw;
+  margin-top: 7vw;
 }
