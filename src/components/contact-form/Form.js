@@ -46,6 +46,7 @@ export default class Form extends Component {
           <p>
             <button type="submit">SEND</button>
           </p>
+          <div style={{ height:'4vw' }}></div>
         </form>
       </div>
     );
