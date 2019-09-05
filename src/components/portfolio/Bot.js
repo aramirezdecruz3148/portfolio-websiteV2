@@ -70,7 +70,6 @@ export default function Hp() {
       <Card
         square={true}
         className={classes.card}
-        raised={true}
       >
         <CardContent spacing={spacing.root} className={styles.card}>
           <Typography variant="h4">@AlchemyPDXBOT</Typography>

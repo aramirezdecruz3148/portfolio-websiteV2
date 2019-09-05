@@ -8,8 +8,7 @@
 
 .form textarea {
   height: 10vw;
-  box-shadow: 0 .4vw .6vw 0 rgba(0, 0, 0, 0.2), 0 .5vw 1vw 0 rgba(0, 0, 0, 0.19);
-  border: white .1vw solid;
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 2px 1px -1px rgba(0,0,0,0.12);  border: white .1vw solid;
 }
 
 .inputs {
@@ -25,8 +24,7 @@
   box-sizing: border-box;
   border-radius: 0;
   border: white .1vw solid;
-  box-shadow: 0 .4vw .6vw 0 rgba(0, 0, 0, 0.2), 0 .5vw 1vw 0 rgba(0, 0, 0, 0.19);
-}
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 2px 1px -1px rgba(0,0,0,0.12);}
 
 [type="submit"] {
   font-family: 'Roboto Condensed', sans-serif;
@@ -41,8 +39,7 @@
   transition: all 0.3s;
   margin-top: -.5vw;
   font-weight:700;
-  box-shadow: 0 .4vw .6vw 0 rgba(0, 0, 0, 0.2), 0 .5vw 1vw 0 rgba(0, 0, 0, 0.19);
-}
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 2px 1px -1px rgba(0,0,0,0.12);}
 
 ::placeholder {
   color: rgb(58, 58, 58);
