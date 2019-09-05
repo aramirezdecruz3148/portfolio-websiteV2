@@ -2,3 +2,24 @@
   display: flex;
   flex-direction: column;
 }
+
+.buttonLinks {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.5vw;
+  font-weight: bolder;
+  color: rgb(29, 29, 29);
+  background: #afeeee;
+  border: solid rgb(31, 31, 31) .1vw;
+  width: 10vw;
+  height: 3vw;
+  text-align: center;
+  padding: .1vw;
+  margin-bottom: .7vw;
+}
+
+.buttonLinks:hover {
+  color: white;
+  background: black;
+  transform: scale(1.2);
+  text-align: center;
+}
