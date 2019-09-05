@@ -69,7 +69,6 @@ export default function Moddo() {
       <Card 
         square={true} 
         className={classes.card} 
-        raised={true}
       >
         <CardContent spacing={spacing.root} className={styles.card}>
           <Typography variant="h4">MODDO</Typography>
