@@ -1,12 +1,12 @@
 import React from 'react';
 import Sidebar from '../../containers/sidebar/Sidebar';
-import WrapAbout from './WrapAbout';
+import WrapPortfolio from './WrapPortfolio';
 
-export default function About() {
+export default function Portfolio() {
   return (
     <>
       <Sidebar />
-      <WrapAbout />
+      <WrapPortfolio />
     </>
   );
 }

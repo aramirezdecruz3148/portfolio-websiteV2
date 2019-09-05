@@ -1,0 +1,6 @@
+.navView {
+  display: flex;
+  justify-content: left;
+  margin-left: 1.4vw;
+  margin-top: 1vw;
+}

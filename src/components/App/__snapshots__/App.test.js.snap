@@ -8,6 +8,18 @@ exports[`App component renders App 1`] = `
       exact={true}
       path="/"
     />
+    <Route
+      component={[Function]}
+      path="/contact"
+    />
+    <Route
+      component={[Function]}
+      path="/about"
+    />
+    <Route
+      component={[Function]}
+      path="/portfolio"
+    />
   </BrowserRouter>
 </Fragment>
 `;
