@@ -1,0 +1,7 @@
+.wrapAbout {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  width: 70vw;
+  margin-left: 30vw;  
+}
