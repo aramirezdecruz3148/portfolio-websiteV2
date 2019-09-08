@@ -22,6 +22,23 @@ const OutsideLogo = posed.img({
   }
 });
 
+const TwitterLogo = posed.img({
+  hoverable: true,
+  pressable: true,
+  init: {
+    scale: 1.2,
+    background: '#afeeee'
+  },
+  hover: {
+    scale: 1.6,
+    background: '#afeeee'
+  },
+  press: {
+    scale: 1.4,
+    background: '#afeeee'
+  }
+});
+
 export default function OutsideLogoShell() {
   return (
     <div className={styles.shell}>
@@ -32,7 +49,7 @@ export default function OutsideLogoShell() {
         <OutsideLogo className={styles.outsideLogo} src={githubLogo} />
       </a>
       <a href='https://twitter.com/dev_de_cruz' rel='noopener noreferrer' target='_blank'>
-        <OutsideLogo className={styles.outsideLogo} src={twitterLogo} />
+        <TwitterLogo className={styles.twitterLogo} src={twitterLogo} />
       </a>
     </div>
   );
