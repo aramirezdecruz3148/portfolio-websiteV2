@@ -14,7 +14,6 @@ const OutsideLogo = posed.img({
   },
   hover: {
     scale: 1.6,
-    background: '#f5f5f5'
   },
   press: {
     scale: 1.4,
@@ -31,7 +30,6 @@ const TwitterLogo = posed.img({
   },
   hover: {
     scale: 1.6,
-    background: '#afeeee'
   },
   press: {
     scale: 1.4,
