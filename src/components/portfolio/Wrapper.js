@@ -4,8 +4,9 @@ import Hp from './HP';
 import Bot from './Bot';
 import Moddo from './Moddo';
 import Newzie from './Newzie';
+import Arnold from './Arnold';
 
-const portfolio = [Newzie, Hp, Bot, Moddo];
+const portfolio = [Newzie, Arnold, Hp, Bot, Moddo];
 
 export default function Wrapper() {
   const [countObj, setCount] = useState({
@@ -37,7 +38,7 @@ export default function Wrapper() {
             className={styles.buttonArrow}
             disabled={countObj.previous}
             onClick={() => updateState(decrementNewCount)}>←</button>
-          <Hp />
+          <Arnold />
           <button
             className={styles.buttonArrow}
             disabled={countObj.next}
@@ -46,6 +47,26 @@ export default function Wrapper() {
       </div>
     );
   } else if(countObj.count === 2) {
+    return (
+      <div className={styles.top}>
+        <div className={styles.center}>
+          <h2 className={styles.title}>PORTFOLIO</h2>
+          <p className={styles.caption}>{countObj.count + 1} of {portfolio.length}</p>
+        </div>
+        <div className={styles.wrapper}>
+          <button
+            className={styles.buttonArrow}
+            disabled={countObj.previous}
+            onClick={() => updateState(decrementNewCount)}>←</button>
+          <Hp />
+          <button
+            className={styles.buttonArrow}
+            disabled={countObj.next}
+            onClick={() => updateState(incrementNewCount)}>→</button>
+        </div>
+      </div>
+    );
+  } else if(countObj.count === 3) {
     return (
       <div className={styles.top}>
         <div className={styles.center}>

@@ -9,7 +9,7 @@ import Collapse from '@material-ui/core/Collapse';
 import IconButton from '@material-ui/core/IconButton';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import styles from './PortfolioCards.css';
-import alchemyBot from '../../assets/alchemyBot.png';
+import heyArnold from '../../assets/heyArnold.png';
 import github from '../../assets/githubLogo.png';
 import { Typography } from '@material-ui/core';
 
@@ -56,7 +56,7 @@ const adjustSpacing = makeStyles(() => ({
   }
 }));
 
-export default function Bot() {
+export default function Arnold() {
   const classes = useStyles();
   const spacing = adjustSpacing();
   const [expanded, setExpanded] = useState(false);
@@ -72,34 +72,32 @@ export default function Bot() {
         className={classes.card}
       >
         <CardContent spacing={spacing.root} className={styles.card}>
-          <Typography variant="h4">@AlchemyPDXBOT</Typography>
+          <Typography variant="h4">Hey Arnold API</Typography>
           <Typography variant="h5">BACK-END APP</Typography>
         </CardContent>
         {!expanded ? (
           <CardContent>
             <p className={styles.caption}>
-            A whimsical twitter bot serving a coding community! Click below to
-            view the deployed app, the source code, or click the expand icon for
-            project details and tech.
+            An API based on Nickelodeons, Hey Arnold show.
             </p>
           </CardContent>
         ) : (
           <CardMedia
             className={classes.media}
-            image={alchemyBot}
+            image={heyArnold}
             title="screen shot of my twitter bot"
           />
         )}
         <CardActions className={spacing.root}>
           <div className={styles.multipleLink}>
-            <a href="https://twitter.com/AlchemyPDXBot" rel="noopener noreferrer" target="_blank">
+            <a href="https://hey-arnold-api-documentation.netlify.com/" rel="noopener noreferrer" target="_blank">
               <button className={styles.anchorButtons}>
                 VIEW
                 <br />
-                APP
+                DOCS
               </button>
             </a>
-            <a href="https://github.com/rainbow-robots/alchemy-community-bot" rel="noopener noreferrer" target="_blank">
+            <a href="https://github.com/aramirezdecruz3148/hey-arnold-api" rel="noopener noreferrer" target="_blank">
               <img className={styles.logo} src={github} />
             </a>
           </div>
@@ -117,22 +115,11 @@ export default function Bot() {
         <Collapse in={expanded} timeout="auto" unmountOnExit>
           <CardContent>
             <Typography paragraph className={spacing.body1}>
-              AlchemyPDXBot is a twitter bot created by Claire Cassidy, Emily
-              Ford, and myself for the alchemy code lab community. If you have a
-              coding question just include our bot handle @AlchemyPDXBot and
-              your question with #help and the bot will post your original
-              question so the alchemy community can comment with answers/ideas.
-              Had a long day of coding and need a pick-me-up? Tweet
-              @AlchemyPDXBot with #joke, and our bot will tweet you a random
-              coding joke. Did you meet a milestone or have a favorite memory or
-              pic of your time at alchemy? Tweet @AlchemyPDXBot with
-              #AlchemyMoment and it will be saved in a collection and retweeted
-              as a throwback once a week. We also have a Rasberry Pi with a
-              keypad of emojis we programmed, living within the Alchemy
-              building, coders can take a moment in their day to create an emoji
-              story on the keypad and our bot will post it. I handled the
-              communication between our code base and the Twitter API as well as
-              helped to create the models for our database and routes.
+            I created an API for the classic Nickelodeon show, Hey Arnold 
+            which provides routes for both character information and GIFs. 
+            The information is publicly sourced and I do not claim to own it. 
+            For information on usage/routes/endpoints visit the 
+              <a href='https://hey-arnold-api-documentation.netlify.com/'> documentation</a>.
             </Typography>
             <Typography className={spacing.h5} variant="h5">
               TECH
@@ -144,7 +131,13 @@ export default function Bot() {
               • MongoDB
             </Typography>
             <Typography paragraph variant="body1" className={spacing.body1}>
-              • Express
+              • Mongoose
+            </Typography>
+            <Typography paragraph variant="body1" className={spacing.body1}>
+              • Cheerio
+            </Typography>
+            <Typography paragraph variant="body1" className={spacing.body1}>
+              • Supertest
             </Typography>
             <Typography paragraph variant="body1" className={spacing.body1}>
               • Jest
