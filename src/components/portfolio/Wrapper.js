@@ -86,7 +86,7 @@ export default function Wrapper() {
         </div>
       </div>
     );
-  } else if(countObj.count === 3) {
+  } else if(countObj.count === 4) {
     return (
       <div className={styles.top}>
         <div className={styles.center}>

@@ -1,0 +1,51 @@
+.container {
+  padding: 1vw;
+  margin-left: 1.9vw;
+  margin-bottom: 3vw;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 7vw;
+}
+
+.title {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.6vw;
+  text-align: center;
+  margin-bottom: 2vw;
+  font-size: 2vw;
+}
+
+.link {
+  text-decoration: none;
+  width: 15vw;
+}
+
+.link:hover {
+  transition: all 1s ease;
+  transform: scale(1.2);
+}  
+
+.talk {
+  color: black;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-bottom: -1vw;
+}
+
+.talkTitle {
+  color: black;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-style: italic;
+}
+
+.img1 {
+  width: 6vw;
+  margin-left: 1vw;
+}
+
+.img2 {
+  width: 7vw;
+}
+

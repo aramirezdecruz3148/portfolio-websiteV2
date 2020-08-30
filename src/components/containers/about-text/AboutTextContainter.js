@@ -1,12 +1,15 @@
 import React from 'react';
 import AboutText from '../../about-me-text/AboutText';
+import AboutTalks from '../../about-me-talks/AboutTalks';
+import pdxwitLogo from '../../../assets/pdxwitLogo.png';
+import donutjsLogo from '../../../assets/donutjsLogo.png';
 import styles from './AboutTextContainer.css';
-import Paper from '@material-ui/core/Paper';
 
 export default function AboutTextContainer() {
   return (
-    <Paper square={true} className={styles.aboutContainer}>
+    <div className={styles.aboutContainer}>
       <AboutText />
-    </Paper>
+      <AboutTalks firstImgSrc={donutjsLogo} secondImgSrc={pdxwitLogo} /> 
+    </div>
   );
 }
