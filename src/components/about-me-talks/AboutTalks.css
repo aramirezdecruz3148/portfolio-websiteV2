@@ -1,13 +1,13 @@
 .container {
   padding: 1vw;
-  margin-left: 2.8vw;
+  margin-left: 2.5vw;
   margin-bottom: 3vw;
-  width: 52vw;
 }
 
 .logoContainer {
   display: flex;
   justify-content: space-evenly;
+  margin-left: 7vw;
 }
 
 .title {
@@ -20,6 +20,7 @@
 
 .link {
   text-decoration: none;
+  width: 15vw;
 }
 
 .link:hover {
