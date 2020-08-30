@@ -6,8 +6,8 @@ import styles from './WrapAbout.css';
 export default function WrapAbout() {
   return (
     <div className={styles.wrapAbout}>
-      <AboutTextContainer />
       <AboutPicContainer /> 
+      <AboutTextContainer />
     </div>
   );
 }
