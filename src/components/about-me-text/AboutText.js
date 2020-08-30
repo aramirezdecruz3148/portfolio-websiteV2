@@ -1,18 +1,25 @@
 import React from 'react';
+import ReactTypingEffect from 'react-typing-effect';
 import styles from './AboutText.css';
 
 export default function AboutText() {
   return (
     <>
-      <h2 className={styles.title}>HELLO THERE!</h2>
-      <p className={styles.textBody}>I am Full-Stack Software Developer and Professional Creative 
-        with a background as an artist and arts administrator. My time 
-        in the arts has primed my tech career with empathy, drive and a 
-        love for dynamic collaboration.
-        As a queer woman of color I am extremely passionate about diversity
-        within the tech community and creating applications that are accessible
-        and can speak across divides.
-        I bring my sense of play, love of coding and creativity to each new build!
+      <div className={styles.titleContainer}>
+        <ReactTypingEffect 
+          className={styles.title}
+          typingDelay={1000}
+          eraseDelay={1200}
+          text={['CURIOUS', 'CREATIVE', 'COLLABORATIVE']} 
+        />
+      </div>
+      <p className={styles.textBody}>I am a Full-Stack Software Developer that leads with curiosity, 
+      passion, drive and a healthy amount of play. My background in the arts has primed my tech 
+      career with empathy  and a love for dynamic collaboration. As a queer woman of color, I value 
+      diversity of thought, technology and humans; and I love the daily challenge of navigating how 
+      that diversity coexists. I am brave in my contributions, have a thirst for learning new tech 
+      and embrace failure. I value spending my time away from the computer mentoring those pursuing 
+      tech and speaking at meet ups.
       </p>
     </>
   );

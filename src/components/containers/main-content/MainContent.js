@@ -10,8 +10,8 @@ export default class MainContent extends Component {
   render() {
     return (
       <div className={styles.main}>
-        <AboutTextContainer />
         <AboutPicContainer />
+        <AboutTextContainer />
         <TechStackContainer />
         <Wrapper />
         <ContactForm />
