@@ -50,9 +50,10 @@ export default function TestTechStack() {
           defaultExpandIcon={<ChevronRightIcon className={classes.root} />}
         >
           <TreeItem nodeId='10' label='Back-End'>
-            <TreeItem nodeId='11' label='Ruby' />
-            <TreeItem nodeId='12' label='Node.js' />
-            <TreeItem nodeId='13' label='Express' />
+            <TreeItem nodeId='11' label='Rails' />
+            <TreeItem node='12' label='GraphQL' />
+            <TreeItem nodeId='13' label='Node.js' />
+            <TreeItem nodeId='14' label='Express' />
           </TreeItem>
         </TreeView>
       </Typography>
@@ -61,11 +62,11 @@ export default function TestTechStack() {
           defaultCollapseIcon={<ExpandMoreIcon className={classes.root} />}
           defaultExpandIcon={<ChevronRightIcon className={classes.root} />}
         >
-          <TreeItem nodeId='14' label='Databases'>
-            <TreeItem nodeId='15' label='PostgreSQL' />
-            <TreeItem nodeId='16' label='Firebase' />
-            <TreeItem nodeId='17' label='MongoDB' />
-            <TreeItem nodeId='18' label='Mongoose' />
+          <TreeItem nodeId='15' label='Databases'>
+            <TreeItem nodeId='16' label='PostgreSQL' />
+            <TreeItem nodeId='17' label='Firebase' />
+            <TreeItem nodeId='18' label='MongoDB' />
+            <TreeItem nodeId='19' label='Mongoose' />
           </TreeItem>
         </TreeView>
       </Typography>
@@ -74,13 +75,13 @@ export default function TestTechStack() {
           defaultCollapseIcon={<ExpandMoreIcon className={classes.root} />}
           defaultExpandIcon={<ChevronRightIcon className={classes.root} />}
         >
-          <TreeItem nodeId='19' label='Tools'>
-            <TreeItem nodeId='20' label='Github' />
-            <TreeItem nodeId='21' label='Slack' />
-            <TreeItem nodeId='22' label='Jira' />
-            <TreeItem nodeId='23' label='VScode' />
-            <TreeItem nodeId='24' label='Heroku' />
-            <TreeItem nodeId='25' label='Netlify' />
+          <TreeItem nodeId='20' label='Tools'>
+            <TreeItem nodeId='21' label='Github' />
+            <TreeItem nodeId='22' label='Slack' />
+            <TreeItem nodeId='23' label='Jira' />
+            <TreeItem nodeId='24' label='VScode' />
+            <TreeItem nodeId='25' label='Heroku' />
+            <TreeItem nodeId='26' label='Netlify' />
           </TreeItem>
         </TreeView>
       </Typography>
@@ -89,12 +90,12 @@ export default function TestTechStack() {
           defaultCollapseIcon={<ExpandMoreIcon className={classes.root} />}
           defaultExpandIcon={<ChevronRightIcon className={classes.root} />}
         >
-          <TreeItem nodeId='26' label='Testing'>
-            <TreeItem nodeId='27' label='Cypress' />
-            <TreeItem nodeId='28' label='Rspec' />
-            <TreeItem nodeId='29' label='Semaphore CI' />
-            <TreeItem nodeId='30' label='Jest' />
-            <TreeItem nodeId='31' label='QUnit' />
+          <TreeItem nodeId='27' label='Testing'>
+            <TreeItem nodeId='28' label='Cypress' />
+            <TreeItem nodeId='29' label='Rspec' />
+            <TreeItem nodeId='30' label='Semaphore CI' />
+            <TreeItem nodeId='31' label='Jest' />
+            <TreeItem nodeId='32' label='QUnit' />
           </TreeItem>
         </TreeView>
       </Typography>
