@@ -89,9 +89,9 @@ export default function Newzie() {
           />
         )}
         <CardActions className={spacing.root}>
-          <a href="https://newzie.netlify.com/" rel="noopener noreferrer" target="_blank">
+          <a href="https://www.youtube.com/watch?v=GF9-4miKsto&feature=youtu.be" rel="noopener noreferrer" target="_blank">
             <button className={styles.anchorButtons}>
-              VIEW
+              DEMO
               <br />
               APP
             </button>
