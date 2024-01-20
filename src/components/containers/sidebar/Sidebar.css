@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: left;
   box-shadow: 5px 5px 2px 1px rgb(231, 231, 231);
-  z-index: auto;
+  z-index: 100;
   position: sticky;
   top: 0;
   
