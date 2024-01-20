@@ -4,7 +4,6 @@ import AboutTextContainer from '../about-text/AboutTextContainter';
 import AboutPicContainer from '../about-pic/AboutPicContainer';
 import TechStackContainer from '../tech-stack/TechStackContainer';
 import Wrapper from '../../portfolio/Wrapper';
-import ContactForm from '../form/ContactForm';
 
 export default class MainContent extends Component {
   render() {
@@ -14,7 +13,6 @@ export default class MainContent extends Component {
         <AboutTextContainer />
         <TechStackContainer />
         <Wrapper />
-        <ContactForm />
       </div>
     );
   }

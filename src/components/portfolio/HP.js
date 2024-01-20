@@ -11,14 +11,16 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import styles from './PortfolioCards.css';
 import HP from '../../assets/HP.png';
 import { Typography } from '@material-ui/core';
+import createBreakpoints from '@material-ui/core/styles/createBreakpoints';
+
+const breakpoints = createBreakpoints({});
 
 const useStyles = makeStyles(theme => ({
   card: {
-    width: '44vw'
-  },
-  media: {
-    paddingTop: '12vw',
-    height: '13vw'
+    width: '70vw',
+    [breakpoints.up('lg')]: {
+      width: '44vw'
+    }
   },
   expand: {
     transform: 'rotate(0deg)',
@@ -43,12 +45,18 @@ const adjustSpacing = makeStyles(() => ({
   },
   body1: {
     fontFamily: 'Assistant',
-    fontSize: '1.5vw',
+    fontSize: '2.5vw',
+    [breakpoints.up('lg')]: {
+      fontSize: '1.5vw'
+    },
     margin: '0'
   },
   h5: {
     fontFamily: 'Roboto Condensed',
-    fontSize: '1.5vw',
+    fontSize: '2.5vw',
+    [breakpoints.up('lg')]: {
+      fontSize: '1.5vw'
+    },
     fontWeight: 'bolder',
     marginTop: '1vw',
     textAlign: 'left'

@@ -5,9 +5,9 @@ import styles from './Home.css';
 
 export default function Home() {
   return (
-        <div className={styles.home}>
-          <Sidebar />
-          <MainContent />
-        </div>
+    <div className={styles.home}>
+      <Sidebar />
+      <MainContent />
+    </div>
   );
 }

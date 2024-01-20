@@ -1,11 +1,18 @@
 .sidebar {
   background: #afeeee;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: left;
-  width: 28vw;
-  height: 100vh;
   box-shadow: 5px 5px 2px 1px rgb(231, 231, 231);
-  position: fixed;
   z-index: auto;
+  position: sticky;
+  top: 0;
+  
+  @media (min-width: 1024px) {
+    width: 28vw;
+    height: 100vh;
+    flex-direction: column;
+    position: fixed;
+  }
 }

@@ -1,7 +1,14 @@
 .aboutContainer {
-  padding: 1vw;
-  margin-left: 2.8vw;
-  margin-bottom: 15vw;
-  width: 60vw;
-  height: 30vw;
+  padding: 8vw;
+  margin-bottom: 1vw;
+  padding-bottom: 0;
+
+  @media (min-width: 1024px) {
+    padding: 1vw;
+    margin-left: 2.8vw;
+    width: 60vw;
+    height: 30vw;
+    margin-bottom: 15vw;
+
+  }
 }

@@ -12,10 +12,16 @@ import styles from './PortfolioCards.css';
 import heyArnold from '../../assets/heyArnold.png';
 import github from '../../assets/githubLogo.png';
 import { Typography } from '@material-ui/core';
+import createBreakpoints from '@material-ui/core/styles/createBreakpoints';
+
+const breakpoints = createBreakpoints({});
 
 const useStyles = makeStyles(theme => ({
   card: {
-    width: '44vw'
+    width: '70vw',
+    [breakpoints.up('lg')]: {
+      width: '44vw'
+    }
   },
   media: {
     paddingTop: '12vw',
@@ -44,12 +50,18 @@ const adjustSpacing = makeStyles(() => ({
   },
   body1: {
     fontFamily: 'Assistant',
-    fontSize: '1vw',
+    fontSize: '2.5vw',
+    [breakpoints.up('lg')]: {
+      fontSize: '1vw'
+    },
     margin: '0'
   },
   h5: {
     fontFamily: 'Roboto Condensed',
-    fontSize: '1.2vw',
+    fontSize: '2.5vw',
+    [breakpoints.up('lg')]: {
+      fontSize: '1.2vw'
+    },
     fontWeight: 'bolder',
     marginTop: '1vw',
     textAlign: 'left'
@@ -72,7 +84,7 @@ export default function Arnold() {
         className={classes.card}
       >
         <CardContent spacing={spacing.root} className={styles.card}>
-          <Typography variant="h4">Hey Arnold API</Typography>
+          <Typography variant="h4">HEY ARNOLD API</Typography>
           <Typography variant="h5">BACK-END APP</Typography>
         </CardContent>
         {!expanded ? (

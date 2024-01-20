@@ -1,13 +1,26 @@
 .shell {
   display: flex;
-  justify-content: left;
-  margin-left: 1.4vw;
-  margin-top: 3vw;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 2vw;
+  margin-bottom: 1vw;
+  
+  @media (min-width: 1024px) {
+    margin-left: 1.4vw;
+    justify-content: left;
+    flex-direction: row;
+  }
 }
 
 .outsideLogo {
-  width: 3vw;
-  height: 3vw;
-  margin-right: 6.4vw;
+  width: 5vw;
+  height: 5vw;
+  margin-right: 2.4vw;
   margin-left: .3vw;
+
+  @media (min-width: 1024px) {
+    width: 3vw;
+    height: 3vw;
+    margin-right: 6.4vw;
+  }
 }

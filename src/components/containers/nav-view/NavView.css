@@ -1,6 +1,11 @@
 .navView {
   display: flex;
-  justify-content: left;
-  margin-left: 1.4vw;
   margin-top: 1vw;
+  margin-left: -10vw;
+  align-items: center;
+  
+  @media (min-width: 1024px) {
+    justify-content: left;
+    margin-left: 1.4vw;
+  }
 }

@@ -1,3 +1,7 @@
 .img {
-  width: 19vw;
+  width: 25vw;
+
+  @media (min-width: 1024px) {
+    width: 19vw;
+  }
 }

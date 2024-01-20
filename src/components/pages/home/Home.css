@@ -1,5 +1,9 @@
 .home {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background: white;
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+  }
 }

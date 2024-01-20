@@ -4,7 +4,13 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 2vw;
+  margin-top: 4vw;
   margin-bottom: 2vw;
-  margin-left: .1vw;
+  gap: 30px;
+  
+  @media (min-width: 1024px) {
+    margin-top: 2vw;
+    margin-left: .1vw;
+    gap: 10px;
+  }
 }

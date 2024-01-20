@@ -1,14 +1,19 @@
 import React from 'react';
 import styles from './TechStackContainer.css';
 import TechStack from '../../tech-stack/TechStack';
+import createBreakpoints from '@material-ui/core/styles/createBreakpoints'
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 
 const defaultTheme = createMuiTheme();
+const breakpoints = createBreakpoints({});
 const theme = createMuiTheme({
   typography: {
     body1: {
-      fontSize: '1.4vw',
+      fontSize: '3.4vw',
+      [breakpoints.up('lg')]: {
+        fontSize: '1.4vw'
+      },
     }
   },
 });
